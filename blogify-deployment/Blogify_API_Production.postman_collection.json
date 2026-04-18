@@ -1,0 +1,54 @@
+{
+  "info": {
+    "name": "Blogify API - Production",
+    "description": "Collection for testing Blogify API on Render",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Health Check",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{URL}}/health",
+          "host": ["{{URL}}"],
+          "path": ["health"]
+        },
+        "description": "Check if the API is running"
+      }
+    },
+    {
+      "name": "Root Route",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{URL}}/",
+          "host": ["{{URL}}"]
+        },
+        "description": "Test the root endpoint"
+      }
+    },
+    {
+      "name": "Get Posts",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{URL}}/posts",
+          "host": ["{{URL}}"],
+          "path": ["posts"]
+        },
+        "description": "Retrieve all blog posts"
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "URL",
+      "value": "https://blogify-api-yourname.onrender.com",
+      "type": "string"
+    }
+  ]
+}
