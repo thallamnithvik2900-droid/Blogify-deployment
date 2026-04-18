@@ -30,7 +30,7 @@ git clone https://github.com/yourusername/blogify-api.git
 cd blogify-api
 ```
 
-2. Install dependencies:
+2. Install dependenc ies:
 ```bash
 npm install
 ```
